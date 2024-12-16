@@ -26,5 +26,6 @@ setup(
         "pycrs",
         "descartes",
         "detectron2@git+https://github.com/facebookresearch/detectron2.git",
+        "detectron2new@git+https://github.com/oliverschuette/detectron2new.git",
     ],
 )
