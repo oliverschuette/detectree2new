@@ -9,7 +9,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 import rasterio
-from detectron2.engine import DefaultPredictor
+from detectron2new.engine import DefaultPredictor
 from detectron2.evaluation.coco_evaluation import instances_to_coco_json
 
 from detectree2.models.train import get_filenames, get_tree_dicts
