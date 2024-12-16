@@ -25,7 +25,7 @@ setup(
         "fiona==1.9.6",
         "pycrs",
         "descartes",
-        "detectron2@git+https://github.com/facebookresearch/detectron2.git",
+        #"detectron2@git+https://github.com/facebookresearch/detectron2.git",
         "detectron2@git+https://github.com/oliverschuette/detectron2new.git",
     ],
 )
