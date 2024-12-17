@@ -594,9 +594,9 @@ def get_tree_dicts(
 
         # Make sure we have the correct height and width
         # If image path ends in .png use cv2 to get height and width else if image path ends in .tif use rasterio
-        if filename.endswith(".png"):
-            height, width = cv2.imread(filename).shape[:2]
-        elif filename.endswith(".tif"):
+        #if filename.endswith(".png"):
+         #   height, width = cv2.imread(filename).shape[:2]
+        if filename.endswith(".tif"):
             with rasterio.open(filename) as src:
                 height, width = src.shape
 
@@ -605,7 +605,7 @@ def get_tree_dicts(
         record["width"] = width
         record["image_id"] = filename[0:400]
         record["annotations"] = {}
-        # print(filename[0:400])
+        print(filename[0:400])
 
         objs = []
         for features in img_anns["features"]:
