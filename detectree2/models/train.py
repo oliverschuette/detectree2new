@@ -599,6 +599,8 @@ def get_tree_dicts(
         if filename.endswith(".tif"):
             with rasterio.open(filename) as src:
                 height, width = src.shape
+        elif filename.endswith(".png"):
+            height, width = cv2.imread(filename).shape[:2]
 
         record["file_name"] = filename
         record["height"] = height
