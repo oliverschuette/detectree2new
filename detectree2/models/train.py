@@ -711,8 +711,8 @@ def get_filenames(directory: str):
 
     if png_files and tif_files:
         # Both .png and .tif files are present, select only .png files
-        files = png_files
-        mode = "rgb"
+        files = tif_files
+        mode = "ms"
     elif png_files:
         # Only .png files are present
         files = png_files
