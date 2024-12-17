@@ -56,6 +56,7 @@ def predict_on_data(
         dataset_dicts, mode = get_filenames(directory)
 
     total_files = len(dataset_dicts)
+    print("Total Files: ", total_files)
     num_to_pred = len(
         dataset_dicts) if num_predictions == 0 else num_predictions
 
