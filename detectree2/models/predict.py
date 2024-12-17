@@ -56,7 +56,7 @@ def predict_on_data(
         dataset_dicts, mode = get_filenames(directory)
 
     total_files = len(dataset_dicts)
-    print("Dataset Dicts: ", dataset_dicts)
+    # print("Dataset Dicts: ", dataset_dicts)
     num_to_pred = len(
         dataset_dicts) if num_predictions == 0 else num_predictions
 
@@ -77,7 +77,7 @@ def predict_on_data(
                 img = src.read()
                 # Transpose to match expected format (H, W, C)
                 img = np.transpose(img, (1, 2, 0))
-                print("Shape des Images: ", img.shape)
+                # print("Shape des Images: ", img.shape)
         else:
             print(f"Unsupported file extension {file_ext} for file {file_name}")
             continue
